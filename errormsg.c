@@ -46,7 +46,7 @@ void EM_error(int pos, char *message, ...)
     vfprintf(stderr, message, ap);
     va_end(ap);
     fprintf(stderr, "\n");
-    exit(0);
+    exit(1);
 }
 
 void debug(int pos, char *message, ...)
